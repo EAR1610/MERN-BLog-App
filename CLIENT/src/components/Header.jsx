@@ -7,7 +7,7 @@ const Header = () => {
 
   useEffect(() => {
     fetch('https://efocaris.onrender.com/profile' ,{
-      credentials: 'include'
+      credentials: 'include',
     }).then( response => {
       response.json().then( userInfo => {
         setUserInfo(userInfo)
