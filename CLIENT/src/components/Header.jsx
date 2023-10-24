@@ -6,7 +6,7 @@ const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch('http://localhost:4000/profile' ,{
+    fetch('https://efocaris.onrender.com/profile' ,{
       credentials: 'include'
     }).then( response => {
       response.json().then( userInfo => {
@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   const logout = () => {
-    fetch('http://localhost:4000/logout', {
+    fetch('https://efocaris.onrender.com/logout', {
       credentials: 'include',
       method: 'POST',
     });

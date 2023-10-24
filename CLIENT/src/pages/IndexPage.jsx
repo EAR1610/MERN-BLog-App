@@ -8,7 +8,7 @@ const IndexPage = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/post').then(response => {
+    fetch('https://efocaris.onrender.com/post').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
