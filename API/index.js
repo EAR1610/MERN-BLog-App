@@ -15,7 +15,7 @@ const secret = 'phantomx546421wqe231wq2e112536213';
 const Swal = require('sweetalert2');
 
 
-app.use(cors({credentials: true, origin:"https://efocaris.onrender.com/"}));
+app.use(cors({credentials: true, origin:"https://efocarispeten.netlify.app"}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
