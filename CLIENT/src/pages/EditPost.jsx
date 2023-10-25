@@ -11,7 +11,7 @@ const EditPost = () => {
     const [redirect, setRedirect] = useState(false);
 
     useEffect(() => {
-        fetch('https://efocaris.onrender.com/post/' + id)
+        fetch('https://efocaris.onrender.com/post' + id)
             .then(response => {
                 response.json().then(postInfo => {
                     settitle(postInfo.title);

@@ -6,8 +6,8 @@ const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch('https://efocaris.onrender.com/profile' ,{
-      credentials: 'include',
+    fetch('https://efocaris.onrender.com/profile', {
+      credentials: 'include',      
     }).then( response => {
       response.json().then( userInfo => {
         setUserInfo(userInfo)
