@@ -12,8 +12,7 @@ const Header = () => {
       response.json().then( userInfo => {
         setUserInfo(userInfo)
       })
-    });
-      
+    });      
   }, []);
 
   const logout = () => {
